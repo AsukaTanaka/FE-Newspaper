@@ -15,6 +15,6 @@ __________ Group 5 __________
 _____________________________
 
 - Document:
-- e-Project Published at:
+- Published:
 
-- Thank you for spending your time to look at our work.
+__________ Thank you for spending your time to look at our work. __________
