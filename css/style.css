@@ -273,6 +273,16 @@ textarea {
 
 
 /**
+    Section
+*/
+
+.site-section {
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+}
+
+/**
     Media Screen
 */
 
