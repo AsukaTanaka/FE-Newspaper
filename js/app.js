@@ -2,20 +2,29 @@ function returnOrgName(cli) {
 
     data.reduce((acc, el) => {
         const filtered = el.clients.filter((client ) => {
-            if(sectionIndex) {
-                if(client.type.includes('index')) {
-                    cli = client;
 
-                    // return client;
-                }
-            }
+            switch(el.org_name) {
+                case 'postThumbnail' :
+                    if(sectionIndex) {
+                        if(client.type.includes('index')) {
+                            cli = client;
+
+                            // return client;
+                        }
+                    }
+                    break;
+                default: 
+                    break;
+            };
+
+           
         });
     
         if (filtered.length > 0) {
             acc.push({ org_name: el.org_name, clients: filtered });
         }
-    
-        return acc;
+        
+         return acc;
 
     }, []);
     return cli;
@@ -35,12 +44,12 @@ function smallContent() {
 
 function psThumbnail(txt) {
     const showText = returnOrgName(txt);
-
+    
     if(document.getElementById('ps-thumbnail-st')) {
     
         var thumbnailList = document.getElementById('ps-thumbnail-st');
 
-        if(sectionIndex) {
+        if(sectionIndex && data.find(item => item.org_name === 'postThumbnail')) {
             thumbnailList.innerHTML = 
                 `
                     <h4 class="h4-title">${showText.post}</h4>
