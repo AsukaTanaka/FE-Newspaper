@@ -1,64 +1,5 @@
-const sectionIndex = document.querySelector('.section-index');
-
-const data = [
-    {
-        org_name: 'postThumbnail',
-        clients: [
-            {
-                post: '',
-                title: '',
-                url: '',
-                thumbnail: '',
-                type: 'index',
-                category: '',
-            },
-            {
-                post: '',
-                title: '',
-                url: '',
-                thumbnail: '',
-                type: 'news',
-                category: '',
-            },
-            {
-                post: '',
-                title: '',
-                url: '',
-                thumbnail: '',
-                type: 'covid',
-                category: '',
-            },
-            {
-                post: '',
-                title: '',
-                url: '',
-                thumbnail: '',
-                type: 'election',
-                category: '',
-            },
-            {
-                post: '',
-                title: '',
-                url: '',
-                thumbnail: '',
-                type: 'sport',
-                category: '',
-            },
-            {
-                post: '',
-                title: '',
-                url: '',
-                thumbnail: '',
-                type: 'healthy',
-                category: '',
-            },
-        ]
-    }
-];
-
 function returnOrgName(cli) {
 
-    
     data.reduce((acc, el) => {
         const filtered = el.clients.filter((client ) => {
             if(sectionIndex) {
@@ -99,10 +40,12 @@ function psThumbnail(txt) {
             thumbnailList.innerHTML = 
                 `
                     <h4 class="h4-title">${showText.post}</h4>
-                    <img class="thumbnail-obj" src="" alt="" title="">
-                    <span class="post-category"></span> 
+                    <img class="thumbnail-obj" src="${showText.url}" alt="" title="${showText.title}">
+                    <span class="post-category">${showText.category}</span> 
                 `;
         }
+
+
     }
 }
 
