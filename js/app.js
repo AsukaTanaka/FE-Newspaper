@@ -52,7 +52,9 @@ function psThumbnail(txt) {
         if(sectionIndex && data.find(item => item.org_name === 'postThumbnail')) {
             thumbnailList.innerHTML = 
                 `
-                    <h4 class="h4-title">${showText.post}</h4>
+                    <div class="title-ps-thumbnail">
+                        <a href="">${showText.post}</a>
+                    </div>
                     <img class="thumbnail-obj" src="${showText.url}" alt="" title="${showText.title}">
                     <span class="post-category">${showText.category}</span> 
                 `;
@@ -90,7 +92,7 @@ function returnHtmlST() {
 */
 
 if(siteSTContent) { 
-    returnHtmlST();
-    psThumbnail();
+    // returnHtmlST();
+    // psThumbnail();
 }
 
