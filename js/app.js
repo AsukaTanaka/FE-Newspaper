@@ -1,4 +1,4 @@
-function returnOrgName(cli) {
+function returnOrgNamePT(cli) {
 
     data.reduce((acc, el) => {
         const filtered = el.clients.filter((client ) => {
@@ -6,6 +6,10 @@ function returnOrgName(cli) {
             switch(el.org_name) {
                 case 'postThumbnail' :
                     if(sectionIndex && client.type.includes('index')) {
+                        cli = client;
+                        // return client;
+                    }
+                    if(sectionNews && client.type.includes('news')) {
                         cli = client;
                         // return client;
                     }
@@ -28,8 +32,12 @@ function returnOrgName(cli) {
 
 }
 
+function returnOrgNameSC() {
+
+}
+
 function psThumbnail(txt) {
-    const showText = returnOrgName(txt);
+    const showTextPT = returnOrgNamePT(txt);
     
     if(document.getElementById('ps-thumbnail-st')) {
 
@@ -38,16 +46,16 @@ function psThumbnail(txt) {
                 document.getElementById('ps-thumbnail-st').innerHTML = 
                 `
                     <div class="title-ps-thumbnail">
-                        <a href="">${showText.post}</a>
+                        <a href="">${showTextPT.post}</a>
                     </div>
                     <div class="post-category">
-                        <img class="thumbnail-obj" src="${showText.thumbnail}" alt="" title="${showText.title}">
+                        <img class="thumbnail-obj" src="${showTextPT.thumbnail}" alt="" title="${showTextPT.title}">
                         <div class="div-status-category"> 
-                            <span class="">${showText.category}</span> 
+                            <span class="">${showTextPT.category}</span> 
                         </div>
                     </div>
                     <div class="child-ps-thumbnail-content">
-                        <a href="">${showText.little_content}</a>
+                        <a href="">${showTextPT.little_content}</a>
                     </div>
                 `;
             }
@@ -175,9 +183,9 @@ function htmlIndexPageST() {
 
     
     st_row.classList.add("row");
-    st_col_01.classList.add("col-12", "col-sm-12", "col-md-12", "col-lg-4", "col-xl-4");
-    st_col_02.classList.add("col-12", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-4");
-    st_col_03.classList.add("col-12", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-4");
+    st_col_01.classList.add("col-12", "col-sm-12", "col-md-12", "col-lg-4", "col-xl-4", "col-st-01");
+    st_col_02.classList.add("col-12", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-4", "col-st-02");
+    st_col_03.classList.add("col-12", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-4", "col-st-03");
 
 
     st_col_01.innerHTML = 

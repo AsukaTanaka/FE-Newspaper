@@ -10,6 +10,9 @@ const data = [
                 type: 'index',
                 category: 'Covid',
                 little_content: "A significant and spreading outbreak -- a first for the Chinese capital -- comes a week after leaders eased the country's restrictive zero-Covid policy",
+                content: {
+
+                },
             },
             {
                 post: '',
@@ -19,7 +22,9 @@ const data = [
                 type: 'news',
                 category: '',
                 little_content: '',
+                content: {
 
+                },
             },
             {
                 post: '',
@@ -29,6 +34,9 @@ const data = [
                 type: 'covid',
                 category: '',
                 little_content: '',
+                content: {
+
+                },
             },
             {
                 post: '',
@@ -38,6 +46,9 @@ const data = [
                 type: 'election',
                 category: '',
                 little_content: '',
+                content: {
+
+                },
             },
             {
                 post: '',
@@ -47,6 +58,9 @@ const data = [
                 type: 'sport',
                 category: '',
                 little_content: '',
+                content: {
+
+                },
             },
             {
                 post: '',
@@ -56,7 +70,42 @@ const data = [
                 type: 'healthy',
                 category: '',
                 little_content: '',
+                content: {
+
+                },
             },
         ]
     }, 
+    {
+        org_name: 'smallContent',
+        clients: [
+            {
+                post: '',
+                title: '',
+                url: '',
+                thumbnail: '',
+                type: 'index',
+                category: '',
+                categoryId: 'only-ps-thumbnail-idx01',
+            }, 
+            {
+                post: '',
+                title: '',
+                url: '',
+                thumbnail: '',
+                type: 'index',
+                category: '',
+                categoryId: 'only-ps-thumbnail-idx02',
+            },
+            {
+                post: '',
+                title: '',
+                url: '',
+                thumbnail: '',
+                type: 'index',
+                category: '',
+                categoryId: 'only-ps-thumbnail-idx03',
+            },
+        ],
+    },
 ];
