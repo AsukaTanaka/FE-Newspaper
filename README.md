@@ -17,6 +17,7 @@ _____________________________
 
 - Document:
 - Published:
-- *Note: it's refreshed from the old one so there will be some changes, but the overall goal remains the same.
+
+*Note: it's refreshed from the old one so there will be some changes, but the overall goal remains the same.
 
 __________ Thank you for spending your time to look at our work. __________
