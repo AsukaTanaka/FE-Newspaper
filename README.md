@@ -19,3 +19,4 @@ _____________________________
 - Published:
 
 __________ Thank you for spending your time to look at our work. __________
+__________ *Note: it's refreshed from the old one so there will be some changes, but the overall goal remains the same. __________
