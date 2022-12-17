@@ -166,6 +166,9 @@ textarea {
     border-radius: 5px;
 }
 
+.scroll-to-top:hover {
+    background: #e6e6e6;
+}
 
 .scroll-to-top.active {
     bottom: 32px;
