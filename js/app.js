@@ -403,6 +403,9 @@ function htmlIndexPageND() {
     const nd_col_01 = document.createElement('div');
     const nd_col_02 = document.createElement('div');
     const nd_col_03 = document.createElement('div');
+    const nd_col_04 = document.createElement('div');
+    const nd_col_05 = document.createElement('div');
+    const nd_col_06 = document.createElement('div');
 
     nd_row.classList.add("row");
     nd_col_01.classList.add("col-12", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-4", "col-nd-01");
@@ -439,10 +442,28 @@ function htmlIndexPageND() {
             </div>
         `;
     
+    nd_col_04.innerHTML = 
+        `
+        
+        `;
+    
+    nd_col_05.innerHTML = 
+        `
+        
+        `;
+    
+    nd_col_06.innerHTML = 
+        `
+        
+        `;
+
     ndList.appendChild(nd_row);
     nd_row.appendChild(nd_col_01);
     nd_row.appendChild(nd_col_02);
     nd_row.appendChild(nd_col_03);
+    // nd_row.appendChild(nd_col_04);
+    // nd_row.appendChild(nd_col_05);
+    // nd_row.appendChild(nd_col_06);
 }
 
 function scrollToTop() {
