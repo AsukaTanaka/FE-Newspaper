@@ -143,7 +143,6 @@ function returnHtmlST_Index(tx) {
     }
 
     for (let i = 0; i < tx.length; i++) {
-        var only_ps_thumbnail_st_02 = document.querySelector(".only-ps-thumbnail-st-02");
 
         const li_01 = document.createElement("li");
         const li_03 = document.createElement("li");
