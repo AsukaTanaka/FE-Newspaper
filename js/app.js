@@ -57,14 +57,12 @@ function createElementIndex() {
 
         col_02.innerHTML = 
         `
-            <div class="only-ps-thumbnail" id="only-ps-thumbnail-01"></div>
-            <div class="only-ps-thumbnail" id="only-ps-thumbnail-02"></div>
         `;
 
         col_03.innerHTML = 
         `
-            <div class="only-ps-thumbnail" id="only-ps-thumbnail-03"></div>
-            <div class="small-content" id="small-content-st-02"></div>
+            <div class="only-ps-thumbnail"></div>
+            <div class="small-content" id="small-content-st-03"></div>
         `;
         
         row.appendChild(col_01);
@@ -100,16 +98,138 @@ function createElementIndex() {
 
 }
 
-function returnHtmlST(tx) {
+function returnHtmlST_Index(tx) {
     if(!document.getElementById("site-st-content")) return;
-    
+
+    var ps_thumbnail_st = document.getElementById("ps-thumbnail-st");
+    var small_content_st_01 = document.getElementById("small-content-st-01");
+    var only_ps_thumbnail_st_03 = document.querySelector(".col-st-03 .only-ps-thumbnail"); 
+    var small_content_st_03 = document.getElementById("small-content-st-03");
+
+    const ul_01 = document.createElement("ul");
+    const ul_03 = document.createElement("ul");
+
+    if(tx[0]["type"] == "ps-thumbnail-st") {
+        ps_thumbnail_st.innerHTML = 
+        `
+            <div class="title-ps-thumbnail">
+                <a href="">${tx[0]["title"]}</a>
+            </div>
+            <div class="post-category">
+                <img class="thumbnail" src="${tx[0]["thumbnail"]}" alt="" title="${tx[0]["title"]}">
+                <div class="status-category">
+                    <span class="">${tx[0]["category"]}</span>
+                </div>
+            </div>
+            <div class="child-ps-thumbnail-content">
+                <a href="">${tx[0]["header"]}</a>
+            </div>
+        `;
+    } else {
+        return;
+    }
+
+    if(tx[1]["type"] == "only-ps-thumbnail-st-03") {
+        only_ps_thumbnail_st_03.innerHTML = 
+        `
+            <div class="">
+                <img alt="" class="thumbnail" title=""
+                    src="${tx[1]["thumbnail"]}">
+            </div>
+            <div class="child-only-ps-thumbnail-content mb-0">
+                <a href="">${tx[1]["title"]}</a>
+            </div>
+        `;
+    }
+
+    for (let i = 0; i < tx.length; i++) {
+        var only_ps_thumbnail_st_02 = document.querySelector(".only-ps-thumbnail-st-02");
+
+        const li_01 = document.createElement("li");
+        const li_03 = document.createElement("li");
+
+
+        let video = ``;
+
+        if(tx[i]["type"] == "small-content-st-01") {
+
+            if(tx[i]["video"] == true) {
+                video = `<span class="icon-play"><i class="bx bx-play-circle"></i></span>`;
+            } else {
+                video = ``;
+            }
+
+            li_01.innerHTML =
+            `
+                <a href="">
+                    <span class="line-horizontal"></span>
+                    ${video}
+                    <span class="text-small-content">
+                        ${tx[i]["title"]}
+                    </span>
+                </a>
+            `;
+        } else {
+
+        }
+
+        if(tx[i]["type"] == "small-content-st-03") {
+
+            if(tx[i]["video"] == true) {
+                video = `<span class="icon-play"><i class="bx bx-play-circle"></i></span>`;
+            } else {
+                video = ``;
+            }
+
+            li_03.innerHTML =
+            `
+                <a href="">
+                    <span class="line-horizontal"></span>
+                    ${video}
+                    <span class="text-small-content">
+                        ${tx[i]["title"]}
+                    </span>
+                </a>
+            `;
+        } else {
+
+        }
+
+
+        if(tx[i]["type"] == "only-ps-thumbnail-st-02") {
+            const div = document.createElement("div");
+            div.classList.add("only-ps-thumbnail");
+            
+            div.innerHTML =
+            `
+                <div class="">
+                    <img alt="" class="thumbnail" title=""
+                        src="${tx[i]["thumbnail"]}">
+                </div>
+                <div class="child-only-ps-thumbnail-content">
+                    <a href="">${tx[i]["title"]}</a>
+                </div>
+            `;
+            document.querySelector(".col-st-02").appendChild(div);
+        } else {
+
+        }
+
+
+        ul_01.appendChild(li_01);
+        ul_03.appendChild(li_03);
+        
+    }   
+
+    small_content_st_01.appendChild(ul_01);
+    small_content_st_03.appendChild(ul_03);
 }
 
-function returnHtmlND(tx) {
+function returnHtmlND_Index(tx) {
 
 }
 
-function returnHtmlRD(tx) {
+function returnHtmlRD_Index(tx) {
 
 }
 
@@ -121,15 +241,15 @@ function getIndex() {
         switch (y[i]["org_name"]) {
             case "index-st" :                
                 cli = y[i]["clients"];
-                returnHtmlST(cli);
+                returnHtmlST_Index(cli);
                 break;
             case "index-nd" :
                 cli = y[i]["clients"];
-                returnHtmlND(cli);
+                returnHtmlND_Index(cli);
                 break;
             case "index-rd" :
                 cli = y[i]["clients"];
-                returnHtmlRD(cli);
+                returnHtmlRD_Index(cli);
                 break;
             default :
                 break;
