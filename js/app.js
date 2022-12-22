@@ -64,8 +64,109 @@ function childPostThumbnail(tx) {
 
                 }
             }
+            if (tx[i]["location"]["type"] == "nd") { 
+                if (tx[i]["location"]["position"] == "col-01") { 
+                    var html = document.querySelector("#nd #col-01 .child-post-thumbnail");
+
+                    html.innerHTML = 
+                    `
+                        <div class="child-header">
+                            <a href="" class="bg-title">
+                                <span>TLBT Business</span>
+                                <span class="icon-next">
+                                    <i class='bx bx-chevron-right'></i>
+                                </span>
+                            </a>
+                            <img class="thumbnail" src="${tx[i]["thumbnail"]}" alt="" title="${tx[i]["title"]}">
+                        </div>
+                        <div class="little-child-post-thumbnail-content mb-0">
+                            <a href="">${tx[i]["title"]}</a>
+                        </div>
+                    `;
+                }
+
+                if (tx[i]["location"]["position"] == "col-02") { 
+                    var html = document.querySelector("#nd #col-02 .child-post-thumbnail");
+
+                    html.innerHTML = 
+                    `
+                        <div class="child-header">
+                            <a href="" class="bg-title">
+                                <span>Covid</span>
+                                <span class="icon-next">
+                                    <i class='bx bx-chevron-right'></i>
+                                </span>
+                            </a>
+                            <img class="thumbnail" src="${tx[i]["thumbnail"]}" alt="" title="${tx[i]["title"]}">
+                        </div>
+                        <div class="little-child-post-thumbnail-content mb-0">
+                            <a href="">${tx[i]["title"]}</a>
+                        </div>
+                    `;
+                }
+
+                if (tx[i]["location"]["position"] == "col-03") { 
+                    var html = document.querySelector("#nd #col-03 .child-post-thumbnail");
+
+                    html.innerHTML = 
+                    `
+                        <div class="child-header">
+                            <a href="" class="bg-title">
+                                <span>Election</span>
+                                <span class="icon-next">
+                                    <i class='bx bx-chevron-right'></i>
+                                </span>
+                            </a>
+                            <img class="thumbnail" src="${tx[i]["thumbnail"]}" alt="" title="${tx[i]["title"]}">
+                        </div>
+                        <div class="little-child-post-thumbnail-content mb-0">
+                            <a href="">${tx[i]["title"]}</a>
+                        </div>
+                    `;
+                }
+
+                if (tx[i]["location"]["position"] == "col-04") { 
+                    var html = document.querySelector("#nd #col-04 .child-post-thumbnail");
+
+                    html.innerHTML = 
+                    `
+                        <div class="child-header">
+                            <a href="" class="bg-title">
+                                <span>Sport</span>
+                                <span class="icon-next">
+                                    <i class='bx bx-chevron-right'></i>
+                                </span>
+                            </a>
+                            <img class="thumbnail" src="${tx[i]["thumbnail"]}" alt="" title="${tx[i]["title"]}">
+                        </div>
+                        <div class="little-child-post-thumbnail-content mb-0">
+                            <a href="">${tx[i]["title"]}</a>
+                        </div>
+                    `;
+                }
+
+                if (tx[i]["location"]["position"] == "col-05") { 
+                    var html = document.querySelector("#nd #col-05 .child-post-thumbnail");
+
+                    html.innerHTML = 
+                    `
+                        <div class="child-header">
+                            <a href="" class="bg-title">
+                                <span>Healthy</span>
+                                <span class="icon-next">
+                                    <i class='bx bx-chevron-right'></i>
+                                </span>
+                            </a>
+                            <img class="thumbnail" src="${tx[i]["thumbnail"]}" alt="" title="${tx[i]["title"]}">
+                        </div>
+                        <div class="little-child-post-thumbnail-content mb-0">
+                            <a href="">${tx[i]["title"]}</a>
+                        </div>
+                    `;
+                }
+            }
         }
-        
+    
     }
 }
 
@@ -75,8 +176,7 @@ function smallContent(tx) {
             let video = ``;
             if (tx[i]["location"]["type"] == "st") {
                 if (tx[i]["location"]["position"] == "col-01") {
-                    var html = document.querySelector("#st #col-01 .small-content");
-                    const ul = document.createElement("ul");
+                    var html = document.querySelector("#st #col-01 .small-content ul");
                     const li = document.createElement("li");
 
                     if(tx[i]["video"] == true) {
@@ -93,13 +193,11 @@ function smallContent(tx) {
                             </span>
                         </a>
                     `;
-                    ul.appendChild(li);
-                    html.appendChild(ul);
+                    html.appendChild(li);
                 }
 
                 if (tx[i]["location"]["position"] == "col-03") {
-                    var html = document.querySelector("#st #col-03 .small-content");
-                    const ul = document.createElement("ul");
+                    var html = document.querySelector("#st #col-03 .small-content ul");
                     const li = document.createElement("li");
 
                     if(tx[i]["video"] == true) {
@@ -116,8 +214,114 @@ function smallContent(tx) {
                             </span>
                         </a>
                     `;
-                    ul.appendChild(li);
-                    html.appendChild(ul);
+                    html.appendChild(li);
+                }
+            }
+
+            if(tx[i]["location"]["type"] == "nd") {
+                if (tx[i]["location"]["position"] == "col-01") {
+                    var html = document.querySelector("#nd #col-01 .small-content ul");
+                    const li = document.createElement("li");
+
+                    if(tx[i]["video"] == true) {
+                        video = `<span class="icon-play"> <i class="bx bx-play-circle"></i> </span>`;
+                    }
+
+                    li.innerHTML = 
+                    `
+                        <a href="">
+                            <span class="line-horizontal"></span>
+                            ${video}
+                            <span class="title-small-content">
+                                ${tx[i]["title"]}
+                            </span>
+                        </a>
+                    `;
+                    html.appendChild(li);
+                }
+
+                if (tx[i]["location"]["position"] == "col-02") {
+                    var html = document.querySelector("#nd #col-02 .small-content ul");
+                    const li = document.createElement("li");
+
+                    if(tx[i]["video"] == true) {
+                        video = `<span class="icon-play"> <i class="bx bx-play-circle"></i> </span>`;
+                    }
+
+                    li.innerHTML = 
+                    `
+                        <a href="">
+                            <span class="line-horizontal"></span>
+                            ${video}
+                            <span class="title-small-content">
+                                ${tx[i]["title"]}
+                            </span>
+                        </a>
+                    `;
+                    html.appendChild(li);
+                }
+
+                if (tx[i]["location"]["position"] == "col-03") {
+                    var html = document.querySelector("#nd #col-03 .small-content ul");
+                    const li = document.createElement("li");
+
+                    if(tx[i]["video"] == true) {
+                        video = `<span class="icon-play"> <i class="bx bx-play-circle"></i> </span>`;
+                    }
+
+                    li.innerHTML = 
+                    `
+                        <a href="">
+                            <span class="line-horizontal"></span>
+                            ${video}
+                            <span class="title-small-content">
+                                ${tx[i]["title"]}
+                            </span>
+                        </a>
+                    `;
+                    html.appendChild(li);
+                }
+
+                if (tx[i]["location"]["position"] == "col-04") {
+                    var html = document.querySelector("#nd #col-04 .small-content ul");
+                    const li = document.createElement("li");
+
+                    if(tx[i]["video"] == true) {
+                        video = `<span class="icon-play"> <i class="bx bx-play-circle"></i> </span>`;
+                    }
+
+                    li.innerHTML = 
+                    `
+                        <a href="">
+                            <span class="line-horizontal"></span>
+                            ${video}
+                            <span class="title-small-content">
+                                ${tx[i]["title"]}
+                            </span>
+                        </a>
+                    `;
+                    html.appendChild(li);
+                }
+
+                if (tx[i]["location"]["position"] == "col-05") {
+                    var html = document.querySelector("#nd #col-05 .small-content ul");
+                    const li = document.createElement("li");
+
+                    if(tx[i]["video"] == true) {
+                        video = `<span class="icon-play"> <i class="bx bx-play-circle"></i> </span>`;
+                    }
+
+                    li.innerHTML = 
+                    `
+                        <a href="">
+                            <span class="line-horizontal"></span>
+                            ${video}
+                            <span class="title-small-content">
+                                ${tx[i]["title"]}
+                            </span>
+                        </a>
+                    `;
+                    html.appendChild(li);
                 }
             }
         }
@@ -147,7 +351,9 @@ function createElIndex() {
         col_01.innerHTML =
         `
             <div class="post-thumbnail"></div>
-            <div class="small-content"></div>
+            <div class="small-content">
+                <ul></ul>    
+            </div>
         `;
 
         col_02.innerHTML = 
@@ -158,13 +364,84 @@ function createElIndex() {
         col_03.innerHTML = 
         `
             <div class="child-post-thumbnail"></div>
-            <div class="small-content"></div>
+            <div class="small-content">
+                <ul></ul>
+            </div>
         `;
 
         row.appendChild(col_01);
         row.appendChild(col_02);
         row.appendChild(col_03);
         st.appendChild(row);
+    }
+
+    if(nd) {
+        const row = document.createElement("div");
+        const col_01 = document.createElement("div");
+        const col_02 = document.createElement("div");
+        const col_03 = document.createElement("div");
+        const col_04 = document.createElement("div");
+        const col_05 = document.createElement("div");
+
+        row.classList.add("row");
+        col_01.classList.add("col-12", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-4", "col");
+        col_02.classList.add("col-12", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-4", "col");
+        col_03.classList.add("col-12", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-4", "col");
+        col_04.classList.add("col-12", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-4", "col");
+        col_05.classList.add("col-12", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-4", "col");
+
+        col_01.setAttribute("id", "col-01");
+        col_02.setAttribute("id", "col-02");
+        col_03.setAttribute("id", "col-03");
+        col_04.setAttribute("id", "col-04");
+        col_05.setAttribute("id", "col-05");
+
+        col_01.innerHTML = 
+        `
+            <div class="child-post-thumbnail"></div>
+            <div class="small-content">
+                <ul></ul>
+            </div>
+        `;
+
+        col_02.innerHTML = 
+        `
+            <div class="child-post-thumbnail"></div>
+            <div class="small-content">
+                <ul></ul>
+            </div>
+        `;
+
+        col_03.innerHTML = 
+        `
+            <div class="child-post-thumbnail"></div>
+            <div class="small-content">
+                <ul></ul>
+            </div>
+        `;
+        
+        col_04.innerHTML = 
+        `
+            <div class="child-post-thumbnail"></div>
+            <div class="small-content">
+                <ul></ul>
+            </div>
+        `;
+
+        col_05.innerHTML = 
+        `
+            <div class="child-post-thumbnail"></div>
+            <div class="small-content">
+                <ul></ul>
+            </div>
+        `;
+
+        row.appendChild(col_01);
+        row.appendChild(col_02);
+        row.appendChild(col_03);
+        row.appendChild(col_04);
+        row.appendChild(col_05);
+        nd.appendChild(row);
     }
 }
 
