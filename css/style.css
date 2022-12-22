@@ -490,7 +490,6 @@ textarea {
     font-weight: 700;
 }
 
-
 /* Media */
 @media (min-width:1440px) {
     #post-index #st #col-02,
@@ -508,6 +507,13 @@ textarea {
 @media (min-width: 991px) {
     .nd-content .small-content ul {
         padding-bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .nd-content #animation {
+        width: 70%;
+        height: auto;
     }
 }
 
@@ -619,5 +625,16 @@ textarea {
 @media (max-width: 400px) { 
     .featured-section .featured-title {
         font-size: 1.40rem;
+    }
+
+    .nd-content #animation {
+        width: 100% !important;
+        height: 280px;
+    }
+}
+
+@media (max-width: 375px) { 
+    .nd-content #animation {
+        height: 260px;
     }
 }

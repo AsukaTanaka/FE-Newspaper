@@ -382,6 +382,7 @@ function createElIndex() {
         const col_03 = document.createElement("div");
         const col_04 = document.createElement("div");
         const col_05 = document.createElement("div");
+        const col_06 = document.createElement("div");
 
         row.classList.add("row");
         col_01.classList.add("col-12", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-4", "col");
@@ -389,12 +390,14 @@ function createElIndex() {
         col_03.classList.add("col-12", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-4", "col");
         col_04.classList.add("col-12", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-4", "col");
         col_05.classList.add("col-12", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-4", "col");
+        col_06.classList.add("col-12", "col-sm-12", "col-md-6", "col-lg-4", "col-xl-4", "col");
 
         col_01.setAttribute("id", "col-01");
         col_02.setAttribute("id", "col-02");
         col_03.setAttribute("id", "col-03");
         col_04.setAttribute("id", "col-04");
         col_05.setAttribute("id", "col-05");
+        col_06.setAttribute("id", "col-06");
 
         col_01.innerHTML = 
         `
@@ -436,11 +439,19 @@ function createElIndex() {
             </div>
         `;
 
+        col_06.innerHTML = 
+        `
+            <div>
+                <img class="animation" src="" alt="" title="" id="animation">
+            </div>
+        `;
+
         row.appendChild(col_01);
         row.appendChild(col_02);
         row.appendChild(col_03);
         row.appendChild(col_04);
         row.appendChild(col_05);
+        row.appendChild(col_06);
         nd.appendChild(row);
     }
 }
