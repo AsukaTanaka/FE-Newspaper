@@ -560,6 +560,7 @@ textarea {
     margin: 0 !important;
     padding: 0 !important;
     border: 1px solid var(--white);
+    opacity: .5;
 }
 
 .site-footer .ft-body {
