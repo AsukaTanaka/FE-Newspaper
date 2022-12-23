@@ -549,7 +549,7 @@ textarea {
 }
 
 .site-footer .ft-header .follow ul li > a:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 .site-footer .ft-header .logo a > b {
