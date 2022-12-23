@@ -28,7 +28,7 @@ function randomImage() {
     setInterval(function() {
         let random = Math.floor(Math.random() *4);
         image.src = arrImage[random];
-    }, 5000);
+    }, 10000);
 }
 
 randomImage();
