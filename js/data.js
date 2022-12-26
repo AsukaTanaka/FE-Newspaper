@@ -2,6 +2,11 @@ let site = document.querySelector(".site-section").id;
 let x = "";
 let y = "";
 let z = "";
+let host = "";
+let username = "";
+let password = "";
+let to = "";
+let from = "";
 
 const data = {
     index: [
