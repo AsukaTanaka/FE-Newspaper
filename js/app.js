@@ -524,6 +524,19 @@ function randomImage() {
         image.src = arrImage[random];
     }, 10000);
 }
+ 
+function Leaflet() {
+    var myMap = L.map('leaflet').setView([10.784139065797811, 106.66058598167935], 14);
+
+    // var attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+    var tileUrl = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+
+    var tiles = L.tileLayer(tileUrl, { maxZoom: 18 })
+    var marker = L.marker([10.787149839912384, 106.66607855787895]);
+
+    tiles.addTo(myMap);
+    marker.addTo(myMap);
+}
 
 /**
  * App Function
@@ -548,6 +561,7 @@ function App() {
         case "post-city" :
             break;
         case "post-feedback" :
+            Leaflet();
             break;
         default :
             false;
