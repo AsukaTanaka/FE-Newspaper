@@ -677,6 +677,9 @@ textarea {
     font-size: .75rem;
 }
 
+/* Feedback */
+
+
 /* Media */
 @media (min-width:1440px) {
     #post-index #st #col-02,
@@ -760,7 +763,7 @@ textarea {
         position: absolute !important;
         display: flex !important;
         justify-content: flex-end;
-        top: 1.25px;
+        top: .5rem;
         right: 0;
         cursor: pointer;
         padding: 15px 30px;
