@@ -1,5 +1,6 @@
 :root {
     --ff-poppins: 'Poppins', sans-serif;
+    --ff-graphik: "Graphik XCond Web", Oswald, HelveticaNeue-CondensedBold, "Open Sans Condensed", Helvetica, Arial, sans-serif;
 
     --fs-100: 0.625rem;
     --fs-200: 0.7625rem;
@@ -829,6 +830,49 @@ textarea {
     font-weight: 700 !important;
     color: var(--black);
     font-family: "Poppins", sans-serif !important;
+}
+
+/* City */
+#post-city .mxw-config {
+    max-width: 640px !important;
+}
+
+.site-section .ci-content {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.site-section .ci-content .ci-wrapper {
+    padding-bottom: 20px;
+}
+
+.site-section .ci-content .ci-wrapper h4 {
+    font-family: vaR(--ff-graphik) !important;
+    font-size: 2rem;
+}
+
+.site-section .ci-content .ci-wrapper span {
+    font-weight: 300 !important;
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.site-section .ci-content .ci-title {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-family: var(--ff-graphik) !important;
+    margin-bottom: 10px !important;
+}
+
+.site-section .ci-content .ci-below img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.site-section .ci-content .ci-below .note-thumbnail {
+    font-style: italic;
+    font-size: .75rem;
 }
 
 /* Media */

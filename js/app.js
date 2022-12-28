@@ -542,6 +542,10 @@ function Validate() {
     
 }
 
+function City() {
+
+}
+
 /**
  * App Function
  */
@@ -563,6 +567,7 @@ function App() {
         case "post-healthy" :
             break;
         case "post-city" :
+            City();
             break;
         case "post-feedback" :
             Leaflet();
