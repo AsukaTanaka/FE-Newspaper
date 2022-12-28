@@ -754,6 +754,83 @@ textarea {
     height: 350px;
 }
 
+.site-section .o-member {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.site-section .o-member .card {
+    display: flex;
+    align-items: center;
+    height: 370px;
+    width: 280px;
+    margin: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center !important;
+}
+
+.site-section .o-member .card .bg-image > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 45% 100%, 0 70%);
+}
+
+.site-section .o-member .picture > img {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid var(--dark-blue);
+    margin-top: -100px;
+}
+
+.site-section .o-member .info h4 {
+    color: var(--black);
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.site-section .o-member .info .code {
+    color: #e74c3c;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-section .o-member .info .code .position {
+    margin-left: 4px;
+    font-size: 14px;
+}
+
+.site-section .o-member .info .socials a {
+    display: inline-block;
+    color: var(--black);
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 0 10px;
+    transition: all .3s ease-in-out;
+}
+
+.site-section .o-member .info .socials a:hover {
+    transform: translateY(-5px);
+}
+
+.site-section .container-fluid .mr-auto h4 {
+    font-size: 2.5rem;
+    font-weight: 700 !important;
+    color: var(--black);
+    font-family: "Poppins", sans-serif !important;
+}
+
 /* Media */
 @media (min-width:1440px) {
     #post-index #st #col-02,
