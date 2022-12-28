@@ -1051,6 +1051,10 @@ textarea {
 }
 
 @media (max-width: 375px) { 
+    .site-header .bx-search-alt {
+        display: none;
+    }
+
     .nd-content #animation {
         height: 260px;
     }
