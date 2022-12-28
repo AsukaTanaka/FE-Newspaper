@@ -538,6 +538,10 @@ function Leaflet() {
     marker.addTo(myMap);
 }
 
+function Validate() {
+    
+}
+
 /**
  * App Function
  */
@@ -562,6 +566,7 @@ function App() {
             break;
         case "post-feedback" :
             Leaflet();
+            Validate();
             break;
         default :
             false;
