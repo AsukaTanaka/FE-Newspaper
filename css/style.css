@@ -870,9 +870,18 @@ textarea {
     height: auto !important;
 }
 
+.site-section .ci-content .ci-below p {
+    font-size: .975rem;
+    margin-top: .9rem !important;
+}
+
 .site-section .ci-content .ci-below .note-thumbnail {
     font-style: italic;
     font-size: .75rem;
+}
+
+.site-section .ci-content .ci-below .line-end {
+    width: 125px;
 }
 
 /* Media */

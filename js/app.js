@@ -542,7 +542,82 @@ function Validate() {
     
 }
 
+function DisplayText(tx) {
+    if(document.getElementById("post-city")) {
+        for (let i = 0; i < tx.length; i++) { 
+            if(tx[i]["location"] == "london") {
+                var london = document.getElementById("london");
+                var p = document.createElement("p");
+
+                p.innerHTML = 
+                `
+                    ${tx[i]["text"]}
+                `;                
+                
+                london.appendChild(p);
+            }
+            if(tx[i]["location"] == "tokyo") {
+                var tokyo = document.getElementById("tokyo");
+                var p = document.createElement("p");
+
+                p.innerHTML = 
+                `
+                    ${tx[i]["text"]}
+                `;                
+                
+                tokyo.appendChild(p);
+            }
+            if(tx[i]["location"] == "paris") {
+                var paris = document.getElementById("paris");
+                var p = document.createElement("p");
+
+                p.innerHTML = 
+                `
+                    ${tx[i]["text"]}
+                `;                
+                
+                paris.appendChild(p);
+            }
+            if(tx[i]["location"] == "new york") {
+                var ny = document.getElementById("new-york");
+                var p = document.createElement("p");
+
+                p.innerHTML = 
+                `
+                    ${tx[i]["text"]}
+                `;                
+                
+                ny.appendChild(p);
+            }
+            if(tx[i]["location"] == "dubai") {
+                var dubai = document.getElementById("dubai");
+                var p = document.createElement("p");
+
+                p.innerHTML = 
+                `
+                    ${tx[i]["text"]}
+                `;                
+                
+                dubai.appendChild(p);
+            }
+        }
+    }
+}
+
 function City() {
+
+    let d = Data(x);
+    let client = "";
+
+    for (let i = 0; i < d.length; i++) {
+        // console.log(d[i]);
+        switch (d[i]["org_name"]) {
+            case "all" :
+                client = d[i]["clients"];
+                DisplayText(client);
+                break;
+        }
+    }
     
 }
 
