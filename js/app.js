@@ -77,6 +77,7 @@ function FirstDashboard(yx) {
         const ul_01 = document.createElement("ul");
         const ul_03 = document.createElement("ul");
 
+        /* Main */
         for (let i = 0; i < item_main.length; i++) {
 
             main_title.innerHTML =
@@ -98,47 +99,49 @@ function FirstDashboard(yx) {
             `;
         }
 
-        for (let k = 0; k < item_sub_02.length; k++) {
+        /* Sub 2 */
+        for (let i = 0; i < item_sub_02.length; i++) {
             const div = document.createElement("div");
             div.classList.add("sub-title-thumbnail");
 
             div.innerHTML =
             `
                 <div class="sub-header">
-                    <img class="size-img" src="${item_sub_02[k]["thumbnail"]}" alt="" title="${item_sub_02[k]["title"]}">
+                    <img class="size-img" src="${item_sub_02[i]["thumbnail"]}" alt="" title="${item_sub_02[i]["title"]}">
                 </div>
                 <div class="sub-post">
-                    <a href="">${item_sub_02[k]["title"]}</a>
+                    <a href="">${item_sub_02[i]["title"]}</a>
                 </div>
             `;
 
             sub_title_02.appendChild(div);
         }
 
-        for (let o = 0; o < item_sub_03.length; o++) {
+        /* Sub 3 */
+        for (let i = 0; i < item_sub_03.length; i++) {
             const div = document.createElement("div");
             div.classList.add("sub-title-thumbnail");
 
             div.innerHTML =
             `
                 <div class="sub-header">
-                    <img class="size-img" src="${item_sub_03[o]["thumbnail"]}" alt="" title="${item_sub_03[o]["title"]}">
+                    <img class="size-img" src="${item_sub_03[i]["thumbnail"]}" alt="" title="${item_sub_03[i]["title"]}">
                 </div>
                 <div class="sub-post">
-                    <a href="">${item_sub_03[o]["title"]}</a>
+                    <a href="">${item_sub_03[i]["title"]}</a>
                 </div>
             `;
 
             sub_title_03.appendChild(div);
         }
 
-
-        for (let j = 0; j < item_small_01.length; j++) {
+        /* Small 1 */
+        for (let i = 0; i < item_small_01.length; i++) {
             const li = document.createElement("li");
 
             let video = ``;
             
-            if(item_small_01[j]["video"] == true) {
+            if(item_small_01[i]["video"] == true) {
                 video = `<span class="icon-video"> <i class="bx bx-play-circle"></i> </span>`;
             } else {
                 video = ``;
@@ -147,12 +150,12 @@ function FirstDashboard(yx) {
             li.innerHTML = 
             `
                 <span class="line-horizontal"></span>
-                <a href="" data-post="${item_small_01[j]["id"]}"> 
+                <a href="" data-post="${item_small_01[i]["id"]}"> 
 
                     ${video}
 
                     <span class="post-sm-title">
-                        ${item_small_01[j]["title"]}
+                        ${item_small_01[i]["title"]}
                     </span>
                 </a>
             `;
@@ -160,13 +163,13 @@ function FirstDashboard(yx) {
         }
         small_title_01.appendChild(ul_01);
 
-
-        for (let u = 0; u < item_small_03.length; u++) {
+        /* Small 3 */
+        for (let i = 0; i < item_small_03.length; i++) {
             const li = document.createElement("li");
 
             let video = ``;
             
-            if(item_small_03[u]["video"] == true) {
+            if(item_small_03[i]["video"] == true) {
                 video = `<span class="icon-video"> <i class="bx bx-play-circle"></i> </span>`;
             } else {
                 video = ``;
@@ -175,12 +178,12 @@ function FirstDashboard(yx) {
             li.innerHTML = 
             `
                 <span class="line-horizontal"></span>
-                <a href="" data-post="${item_small_03[u]["id"]}"> 
+                <a href="" data-post="${item_small_03[i]["id"]}"> 
 
                     ${video}
 
                     <span class="post-sm-title">
-                        ${item_small_03[u]["title"]}
+                        ${item_small_03[i]["title"]}
                     </span>
                 </a>
             `;
