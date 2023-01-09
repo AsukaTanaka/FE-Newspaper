@@ -29,11 +29,6 @@ const data = {
                     content: {
                         date: "",
                         header: "A significant and spreading outbreak -- a first for the Chinese capital -- comes a week after leaders eased the country's restrictive zero-Covid policy",
-                        text: [
-                            {
-                                p: "",
-                            },
-                        ]
                     },
                 },
                 {
@@ -46,11 +41,6 @@ const data = {
                     content: {
                         date: "",
                         header: "",
-                        text: [
-                            {
-                                p: "",
-                            },
-                        ]
                     },
                 },
                 {
@@ -63,11 +53,6 @@ const data = {
                     content: {
                         date: "",
                         header: "",
-                        text: [
-                            {
-                                p: "",
-                            },
-                        ]
                     },
                 },
                 {
@@ -80,11 +65,6 @@ const data = {
                     content: {
                         date: "",
                         header: "",
-                        text: [
-                            {
-                                p: "",
-                            },
-                        ]
                     },
                 },
                 {
@@ -98,11 +78,6 @@ const data = {
                     content: {
                         date: "",
                         header: "",
-                        text: [
-                            {
-                                p: "",
-                            },
-                        ]
                     },
                 },
                 {
@@ -116,11 +91,6 @@ const data = {
                     content: {
                         date: "",
                         header: "",
-                        text: [
-                            {
-                                p: "",
-                            },
-                        ]
                     },
                 },
                 {
@@ -134,11 +104,6 @@ const data = {
                     content: {
                         date: "",
                         header: "",
-                        text: [
-                            {
-                                p: "",
-                            },
-                        ]
                     },
                 },
                 {
@@ -152,11 +117,6 @@ const data = {
                     content: {
                         date: "",
                         header: "",
-                        text: [
-                            {
-                                p: "",
-                            },
-                        ]
                     },
                 },
                 {
@@ -169,11 +129,6 @@ const data = {
                     content: {
                         date: "",
                         header: "",
-                        text: [
-                            {
-                                p: "",
-                            },
-                        ]
                     },
                 },
                 {
@@ -187,11 +142,6 @@ const data = {
                     content: {
                         date: "",
                         header: "",
-                        text: [
-                            {
-                                p: "",
-                            },
-                        ]
                     },
                 },
                 {
@@ -205,11 +155,6 @@ const data = {
                     content: {
                         date: "",
                         header: "",
-                        text: [
-                            {
-                                p: "",
-                            },
-                        ]
                     },
                 },
             ]
