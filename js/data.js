@@ -1,5 +1,6 @@
 let site = document.querySelector("section").id;
 
+let return_data = "";
 
 let x = "";
 let y = "";
@@ -29,6 +30,9 @@ const data = {
                     content: {
                         date: "",
                         header: "A significant and spreading outbreak -- a first for the Chinese capital -- comes a week after leaders eased the country's restrictive zero-Covid policy",
+                        html: [
+
+                        ],
                     },
                 },
                 {
@@ -41,6 +45,9 @@ const data = {
                     content: {
                         date: "",
                         header: "",
+                        html: [
+
+                        ],
                     },
                 },
                 {
@@ -53,6 +60,9 @@ const data = {
                     content: {
                         date: "",
                         header: "",
+                        html: [
+
+                        ],
                     },
                 },
                 {
@@ -65,6 +75,9 @@ const data = {
                     content: {
                         date: "",
                         header: "",
+                        html: [
+
+                        ],
                     },
                 },
                 {
@@ -78,6 +91,9 @@ const data = {
                     content: {
                         date: "",
                         header: "",
+                        html: [
+
+                        ],
                     },
                 },
                 {
@@ -91,6 +107,9 @@ const data = {
                     content: {
                         date: "",
                         header: "",
+                        html: [
+
+                        ],
                     },
                 },
                 {
@@ -104,6 +123,9 @@ const data = {
                     content: {
                         date: "",
                         header: "",
+                        html: [
+
+                        ],
                     },
                 },
                 {
@@ -117,6 +139,9 @@ const data = {
                     content: {
                         date: "",
                         header: "",
+                        html: [
+
+                        ],
                     },
                 },
                 {
@@ -129,6 +154,9 @@ const data = {
                     content: {
                         date: "",
                         header: "",
+                        html: [
+
+                        ],
                     },
                 },
                 {
@@ -142,6 +170,9 @@ const data = {
                     content: {
                         date: "",
                         header: "",
+                        html: [
+
+                        ],
                     },
                 },
                 {
@@ -155,6 +186,9 @@ const data = {
                     content: {
                         date: "",
                         header: "",
+                        html: [
+
+                        ],
                     },
                 },
             ]
