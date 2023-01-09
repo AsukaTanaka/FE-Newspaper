@@ -21,14 +21,14 @@ const data = {
             clients: [
                 {
                     id: "post-01",
-                    title: "",
-                    thumbnail: "",
+                    title: "Beijing streets empty as Covid cases explode",
+                    thumbnail: "https://cdn.cnn.com/cnnnext/dam/assets/221214120831-beijing-china-ciudad-fantasma-restricciones-covid19-selina-wang-pkg-digital-00001330-large-tease.jpg",
                     url: "",
                     type: "main-title-thumbnail-category",
-                    category: "",
+                    category: "covid",
                     content: {
                         date: "",
-                        header: "",
+                        header: "A significant and spreading outbreak -- a first for the Chinese capital -- comes a week after leaders eased the country's restrictive zero-Covid policy",
                         text: [
                             {
                                 p: "",
@@ -38,8 +38,8 @@ const data = {
                 },
                 {
                     id: "post-02",
-                    title: "",
-                    thumbnail: "",
+                    title: "Indian and Chinese troops fight with sticks and bricks in video",
+                    thumbnail: "https://cdn.cnn.com/cnnnext/dam/assets/221214144052-clash-between-indian-and-chinese-troops-medium-tease.jpg",
                     url: "",
                     type: "sub-title-thumbnail-category",
                     category: "",
@@ -55,8 +55,8 @@ const data = {
                 },
                 {
                     id: "post-03",
-                    title: "",
-                    thumbnail: "",
+                    title: "This country has arrested 2% of its adult population in its war on gangs",
+                    thumbnail: "https://cdn.cnn.com/cnnnext/dam/assets/221214134700-el-salvador-soldiers-file-120522-medium-tease.jpg",
                     url: "",
                     type: "title-thumbnail-category-sub",
                     category: "",
@@ -72,11 +72,11 @@ const data = {
                 },
                 {
                     id: "post-04",
-                    title: "",
-                    thumbnail: null,
+                    title: "Chinese diplomats wanted by UK police for questioning return to Beijing",
+                    thumbnail: "https://cdn.cnn.com/cnnnext/dam/assets/221017110705-protest-turns-violent-outside-chinese-consulate-medium-tease.jpg",
                     url: "",
-                    type: "small-title",
-                    category: null,
+                    type: "title-thumbnail-category-sub",
+                    category: "",
                     content: {
                         date: "",
                         header: "",
@@ -89,11 +89,12 @@ const data = {
                 },
                 {
                     id: "post-05",
-                    title: "",
+                    title: "Why people in China are panic buying canned yellow peaches",
                     thumbnail: null,
                     url: "",
                     type: "small-title",
                     category: null,
+                    video: false,
                     content: {
                         date: "",
                         header: "",
@@ -106,11 +107,12 @@ const data = {
                 },
                 {
                     id: "post-06",
-                    title: "",
+                    title: "Hong Kong scraps some remaining restrictions for travelers",
                     thumbnail: null,
                     url: "",
                     type: "small-title",
                     category: null,
+                    video: false,
                     content: {
                         date: "",
                         header: "",
@@ -123,11 +125,12 @@ const data = {
                 },
                 {
                     id: "post-07",
-                    title: "",
+                    title: "Here's why streets are empty in Beijing despite ease of Covid restrictions",
                     thumbnail: null,
                     url: "",
                     type: "small-title",
                     category: null,
+                    video: true,
                     content: {
                         date: "",
                         header: "",
@@ -140,11 +143,12 @@ const data = {
                 },
                 {
                     id: "post-08",
-                    title: "",
+                    title: "Chinese student appears in US court over alleged threats to pro-democracy advocate",
                     thumbnail: null,
                     url: "",
                     type: "small-title",
                     category: null,
+                    video: false,
                     content: {
                         date: "",
                         header: "",
@@ -157,7 +161,7 @@ const data = {
                 },
                 {
                     id: "post-09",
-                    title: "",
+                    title: "France ends Morocco's Qatar 2022 dream and advances to World Cup final",
                     thumbnail: null,
                     url: "",
                     type: "small-title",
@@ -174,11 +178,30 @@ const data = {
                 },
                 {
                     id: "post-10",
-                    title: "",
+                    title: "Bali bomber apologizes for nightclub attacks that killed 202",
                     thumbnail: null,
                     url: "",
                     type: "small-title",
                     category: null,
+                    video: false,
+                    content: {
+                        date: "",
+                        header: "",
+                        text: [
+                            {
+                                p: "",
+                            },
+                        ]
+                    },
+                },
+                {
+                    id: "post-11",
+                    title: "American one of seven charged in Russian military grade weapon smuggling ring",
+                    thumbnail: null,
+                    url: "",
+                    type: "small-title",
+                    category: null,
+                    video: false,
                     content: {
                         date: "",
                         header: "",
@@ -193,36 +216,10 @@ const data = {
         }
     ],
 
-    news: [
-        {
-            
-        }
-    ],
+    other: [
 
-    covid: [
-        {
-            
-        }
     ],
-
-    election: [
-        {
-            
-        }
-    ],
-
-    sport: [
-        {
-            
-        }
-    ],
-
-    healthy: [
-        {
-            
-        }
-    ],
-
+    
     city: [
         {
             
