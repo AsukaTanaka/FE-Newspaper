@@ -42,7 +42,7 @@ const data = {
                     thumbnail: "https://cdn.cnn.com/cnnnext/dam/assets/221214144052-clash-between-indian-and-chinese-troops-medium-tease.jpg",
                     url: "",
                     type: "sub-title-thumbnail-category",
-                    category: "",
+                    category: null,
                     content: {
                         date: "",
                         header: "",
@@ -59,7 +59,7 @@ const data = {
                     thumbnail: "https://cdn.cnn.com/cnnnext/dam/assets/221214134700-el-salvador-soldiers-file-120522-medium-tease.jpg",
                     url: "",
                     type: "title-thumbnail-category-sub",
-                    category: "",
+                    category: null,
                     content: {
                         date: "",
                         header: "",
@@ -76,7 +76,7 @@ const data = {
                     thumbnail: "https://cdn.cnn.com/cnnnext/dam/assets/221017110705-protest-turns-violent-outside-chinese-consulate-medium-tease.jpg",
                     url: "",
                     type: "title-thumbnail-category-sub",
-                    category: "",
+                    category: null,
                     content: {
                         date: "",
                         header: "",
@@ -90,10 +90,10 @@ const data = {
                 {
                     id: "post-05",
                     title: "Why people in China are panic buying canned yellow peaches",
-                    thumbnail: null,
+                    // thumbnail: null,
                     url: "",
                     type: "small-title",
-                    category: null,
+                    // category: null,
                     video: false,
                     content: {
                         date: "",
@@ -108,10 +108,10 @@ const data = {
                 {
                     id: "post-06",
                     title: "Hong Kong scraps some remaining restrictions for travelers",
-                    thumbnail: null,
+                    // thumbnail: null,
                     url: "",
                     type: "small-title",
-                    category: null,
+                    // category: null,
                     video: false,
                     content: {
                         date: "",
@@ -126,10 +126,10 @@ const data = {
                 {
                     id: "post-07",
                     title: "Here's why streets are empty in Beijing despite ease of Covid restrictions",
-                    thumbnail: null,
+                    // thumbnail: null,
                     url: "",
                     type: "small-title",
-                    category: null,
+                    // category: null,
                     video: true,
                     content: {
                         date: "",
@@ -144,10 +144,10 @@ const data = {
                 {
                     id: "post-08",
                     title: "Chinese student appears in US court over alleged threats to pro-democracy advocate",
-                    thumbnail: null,
+                    // thumbnail: null,
                     url: "",
                     type: "small-title",
-                    category: null,
+                    // category: null,
                     video: false,
                     content: {
                         date: "",
@@ -162,10 +162,10 @@ const data = {
                 {
                     id: "post-09",
                     title: "France ends Morocco's Qatar 2022 dream and advances to World Cup final",
-                    thumbnail: null,
+                    // thumbnail: null,
                     url: "",
                     type: "small-title",
-                    category: null,
+                    // category: null,
                     content: {
                         date: "",
                         header: "",
@@ -179,10 +179,10 @@ const data = {
                 {
                     id: "post-10",
                     title: "Bali bomber apologizes for nightclub attacks that killed 202",
-                    thumbnail: null,
+                    // thumbnail: null,
                     url: "",
                     type: "small-title",
-                    category: null,
+                    // category: null,
                     video: false,
                     content: {
                         date: "",
@@ -197,10 +197,10 @@ const data = {
                 {
                     id: "post-11",
                     title: "American one of seven charged in Russian military grade weapon smuggling ring",
-                    thumbnail: null,
+                    // thumbnail: null,
                     url: "",
                     type: "small-title",
-                    category: null,
+                    // category: null,
                     video: false,
                     content: {
                         date: "",
@@ -219,7 +219,7 @@ const data = {
     other: [
 
     ],
-    
+
     city: [
         {
             
