@@ -1,5 +1,9 @@
 let site = document.querySelector("section").id;
 
+/* Section */
+const index = document.getElementById("sct-dashboard");
+
+/* Data */
 let return_data = "";
 
 let x = "";
@@ -55,7 +59,7 @@ const data = {
                     title: "This country has arrested 2% of its adult population in its war on gangs",
                     thumbnail: "https://cdn.cnn.com/cnnnext/dam/assets/221214134700-el-salvador-soldiers-file-120522-medium-tease.jpg",
                     url: "",
-                    type: "title-thumbnail-category-sub",
+                    type: "sub-title-thumbnail-category",
                     category: null,
                     content: {
                         date: "",
@@ -70,7 +74,7 @@ const data = {
                     title: "Chinese diplomats wanted by UK police for questioning return to Beijing",
                     thumbnail: "https://cdn.cnn.com/cnnnext/dam/assets/221017110705-protest-turns-violent-outside-chinese-consulate-medium-tease.jpg",
                     url: "",
-                    type: "title-thumbnail-category-sub",
+                    type: "sub-title-thumbnail-category",
                     category: null,
                     content: {
                         date: "",
