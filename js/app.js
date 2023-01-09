@@ -52,19 +52,67 @@ function createElDashboard() {
         `;
     }
 
+    if(second) {
+        second.innerHTML = 
+        `
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-01">
+                    <div class="sub-title-thumbnail">
+                    </div>
+
+                    <div class="small-title">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-02">
+                    <div class="sub-title-thumbnail">
+                    </div>
+
+                    <div class="small-title">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-03">
+                    <div class="sub-title-thumbnail">
+                    </div>
+
+                    <div class="small-title">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-04">
+                    <div class="sub-title-thumbnail">
+                    </div>
+
+                    <div class="small-title">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-05">
+                    <div class="sub-title-thumbnail">
+                    </div>
+
+                    <div class="small-title">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-06">
+                    <div class="advertise-animation">
+                        <img class="img-animation" src="" alt="" title="" id="img-animation">
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
 
 }
 
 
 function FirstDashboard(yx) {
     if(index) {
-        main_title = document.querySelector(".sct-dashboard .first-content .col-01 .main-title-thumbnail");
+        var main_title = document.querySelector(".sct-dashboard .first-content .col-01 .main-title-thumbnail");
 
-        sub_title_02 = document.querySelector(".sct-dashboard .first-content .col-02");
-        sub_title_03 = document.querySelector(".sct-dashboard .first-content .col-03 .sub-title-thumbnail");
-
-        small_title_01 = document.querySelector(".sct-dashboard .first-content .col-01 .small-title");
-        small_title_03 = document.querySelector(".sct-dashboard .first-content .col-03 .small-title");
+        var sub_title_02 = document.querySelector(".sct-dashboard .first-content .col-02");
+        var sub_title_03 = document.querySelector(".sct-dashboard .first-content .col-03 .sub-title-thumbnail");
+        
+        var small_title_01 = document.querySelector(".sct-dashboard .first-content .col-01 .small-title");
+        var small_title_03 = document.querySelector(".sct-dashboard .first-content .col-03 .small-title");
 
         var item_main = yx.slice(0, 1);
 
@@ -195,11 +243,21 @@ function FirstDashboard(yx) {
 }
 
 function SecondDashboard(yx) {
+    if(index) {
+        var sub_title_01 = document.querySelector(".sct-dashboard .second-content .col-01 .sub-title-thumbnail");
+        var sub_title_02 = document.querySelector(".sct-dashboard .second-content .col-02 .sub-title-thumbnail");
+        var sub_title_03 = document.querySelector(".sct-dashboard .second-content .col-03 .sub-title-thumbnail");
+        var sub_title_04 = document.querySelector(".sct-dashboard .second-content .col-04 .sub-title-thumbnail");
+        var sub_title_05 = document.querySelector(".sct-dashboard .second-content .col-05 .sub-title-thumbnail");
 
+        
+    }
 }
 
 function ThirdDashboard(yx) {
-
+    if(index) {
+        
+    }
 }
 
 function Dashboard() {

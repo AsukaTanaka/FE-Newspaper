@@ -93,6 +93,36 @@ select {
     font: inherit;
 }
 
+.scroll-button {
+    background: #f2f2f2;
+    color: var(--black);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    pointer-events: none;
+    opacity: 0;
+    transition: all .4s;
+    z-index: 999;
+    border-radius: 5px;
+}
+
+.scroll-button:hover {
+    background: #e6e6e6;
+}
+
+.scroll-button.active {
+    bottom: 32px;
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
 /* Menu */
 
 header {
@@ -286,7 +316,7 @@ section .size-img {
     text-transform: uppercase;
 }
 
-.sct-dashboard .col-01 .post-header > a {
+.sct-dashboard .first-content .col-01 .post-header > a {
     font-size: 1rem !important;
 }
 
@@ -306,7 +336,7 @@ section .size-img {
     font-size: 1.25rem !important;
 }
 
-.sct-dashboard .col-01 .post-header > a,
+.sct-dashboard .first-content .col-01 .post-header > a,
 .sct-dashboard .sub-title-thumbnail .sub-post > a {
     font-weight: 700;
     line-height: .75rem;
@@ -339,6 +369,44 @@ section .size-img {
     opacity: .5;
 }
 
+section .title-name {
+    padding: 1.75rem 0 1rem;
+    overflow: hidden;
+}
+
+section .title-name .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+section .title-name .header h2 {
+    position: relative;
+    width: 100%;
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
+section .title-name .header h2 .inline-horizontal,
+section .title-name .header h2 .inline-horizontal::after {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    opacity: .5;
+}
+
+section .title-name .header h2 .inline-horizontal {
+    bottom: 5px;
+    border-top: 4px solid var(--gray) !important;
+    margin-left: 10px;
+}
+
+section .title-name .header h2 .inline-horizontal::after {
+    bottom: 10px;
+    border-bottom: 4px solid var(--gray);
+    content: "";
+}
 
 /* Media */
 
@@ -445,7 +513,9 @@ section .size-img {
         padding-bottom: 15px;
     }
 
-
+    section .title-name {
+        padding: 1.5rem 0 1rem;
+    }
 }
 
 /* 768 Pixels */
@@ -474,5 +544,12 @@ section .size-img {
 
     header nav .nav-search .bx-search-alt {
         display: none;
+    }
+}
+
+/* 400 Pixels */
+@media (max-width: 400px) { 
+    section .title-name .header h2 {
+        font-size: 1.4rem;
     }
 }

@@ -196,7 +196,417 @@ const data = {
                     },
                 },
             ]
-        }
+        }, 
+        {
+            location: "second-content",
+            clients: [
+                {
+                    name: "",
+                    link: "",
+                    details: [
+                        {
+                            id: "",
+                            title: "",
+                            thumbnail: "",
+                            url: "",
+                            type: "",
+                            category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                    ]
+                },
+                {
+                    name: "",
+                    link: "",
+                    details: [
+                        {
+                            id: "",
+                            title: "",
+                            thumbnail: "",
+                            url: "",
+                            type: "",
+                            category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                    ]
+                },
+                {
+                    name: "",
+                    link: "",
+                    details: [
+                        {
+                            id: "",
+                            title: "",
+                            thumbnail: "",
+                            url: "",
+                            type: "",
+                            category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                    ]
+                },
+                {
+                    name: "",
+                    link: "",
+                    details: [
+                        {
+                            id: "",
+                            title: "",
+                            thumbnail: "",
+                            url: "",
+                            type: "",
+                            category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                    ]
+                },
+                {
+                    name: "",
+                    link: "",
+                    details: [
+                        {
+                            id: "",
+                            title: "",
+                            thumbnail: "",
+                            url: "",
+                            type: "",
+                            category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                        {
+                            id: "",
+                            title: "",
+                            // thumbnail: "",
+                            url: "",
+                            type: "",
+                            // category: "",
+                            content: {
+                                date: "",
+                                header: "",
+                                html: [
+        
+                                ],
+                            },
+                        },
+                    ]
+                },
+            ],
+        },
     ],
 
     other: [
