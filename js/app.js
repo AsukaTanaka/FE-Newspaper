@@ -517,8 +517,11 @@ function ThirdDashboard(yx) {
                             <i class="bx bx-play"></i>
                         </div>
                     </div>
-                    <span>${item_video_left[i]["title"]}</span>
                 </a>
+                <a href="" data-post="${item_video_left[i]["id"]}">
+                    <span>${item_video_left[i]["title"]}</span>
+                </a> 
+
             `;
         }
 
