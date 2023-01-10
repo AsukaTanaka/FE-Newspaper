@@ -587,6 +587,52 @@ function Dashboard() {
     }
 }
 
+function Feedback() {
+    let d = Data(x);
+
+    var o_member = document.querySelector(".sct-feedback .o-member");
+    
+    for (let i = 0; i < d.length; i++) {
+        const card = document.createElement("div");
+        card.classList.add("card");
+
+        card.innerHTML =
+        `
+            <div class="bg-image">
+                <img src="../images/bg-image.jpg" alt="">
+            </div>
+            <div class="picture">
+                <img src="${d[i]["avatar"]}" alt="">
+            </div>
+            <div class="info">
+                <h4>${d[i]["user"]}</h4>
+                <div class="code">
+                    <span>
+                        <i class="bx bx-code"></i>
+                    </span>
+                    <span class="position">${d[i]["position"]}</span>
+                </div>
+                <div class="socials">
+                    <a href="${d[i]["facebook"]}">
+                        <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="${d[i]["github"]}">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="${d[i]["twitter"]}">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                    <a href="${d[i]["instagram"]}">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        `;
+
+        o_member.appendChild(card);
+    }
+}
+
 function _Random() {
     let image = document.getElementById("img-animation");
 
@@ -605,6 +651,23 @@ function _Random() {
     }, 10000);
 }
 
+function Leaflet() {
+    var myMap = L.map("leaflet").setView([10.784139065797811, 106.66058598167935], 14);
+
+    // var attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+    var tileUrl = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+
+    var tiles = L.tileLayer(tileUrl, { maxZoom: 18 })
+    var marker = L.marker([10.787149839912384, 106.66607855787895]);
+
+    tiles.addTo(myMap);
+    marker.addTo(myMap);
+}
+
+function Validate() {
+
+}
+
 function App() {
     switch (site) {
         case "sct-dashboard" : 
@@ -616,6 +679,9 @@ function App() {
         case "sct-city" :
             break;
         case "sct-feedback" :
+            Feedback();
+            Leaflet();
+            Validate();
             break;
         default :
             break;

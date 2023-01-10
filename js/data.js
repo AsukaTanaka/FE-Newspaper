@@ -696,8 +696,41 @@ const data = {
 
     feedback: [
         {
-            
-        }
+            user: "Pham Quoc Thang",
+            avatar: "../images/profile-1.png",
+            position: "Web Developer",
+            facebook: "",
+            github: "",
+            twitter: "",
+            instagram: "",
+        },
+        {
+            user: "Duong Hoa Long",
+            avatar: "../images/profile-2.png",
+            position: "Web Developer",
+            facebook: "",
+            github: "",
+            twitter: "",
+            instagram: "",
+        },
+        {
+            user: "Tran Hoang Quoc Tai",
+            avatar: "../images/profile.png",
+            position: "Web Designer",
+            facebook: "",
+            github: "",
+            twitter: "",
+            instagram: "",
+        },
+        {
+            user: "Trinh Gia Bao",
+            avatar: "../images/profile-3.png",
+            position: "Web Designer",
+            facebook: "",
+            github: "",
+            twitter: "",
+            instagram: "",
+        },
     ],
 
 };
