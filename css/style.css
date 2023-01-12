@@ -760,6 +760,56 @@ section .title-name .header h2 .inline-horizontal::after {
     display: none !important;
 }
 
+/* Other */
+.sct-other .swiper .swiper-slide {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sct-other .swiper .get-slide img {
+    width: 100%;
+    height: 320px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.sct-other .swiper .get-slide .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 30px;
+    color: var(--white);
+}
+
+.sct-other .swiper .get-slide .info h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.sct-other .swiper .get-slide .info a {
+    display: block;
+    background: rgba(0, 0, 0, 0.4);
+    color: var(--white);
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border-radius: 4px;
+}
+
+.sct-other .swiper .swiper-button-next,
+.sct-other .swiper .swiper-button-prev {
+    top: 45px;
+    color: var(--white);
+}
+
+.sct-other .swiper .get-slide .info a:hover {
+    color: #e6e6e6;
+}
+
 /* Footer */
 footer .container {
     padding-left: 0 !important;

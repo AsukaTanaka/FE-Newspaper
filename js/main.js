@@ -24,9 +24,37 @@ function Scroll() {
 
 /* Carousel using Swiper */
 
-function Swiper() {
-
+if(document.querySelector(".sct-other .swiper")) {
+    new Swiper('.sct-other .swiper', {
+        slidesPerView: 1,
+        loop: false,
+        autoHeight: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            0 : {
+                slidesPerView: 1,
+            }, 
+            567 : {
+                slidesPerView: 1,
+            }, 
+            768 : {
+                slidesPerView: 1,
+            }, 
+            991 : {
+                slidesPerView: 1,
+            }, 
+            1200 : {
+                slidesPerView: 1,
+            }
+        },
+    });
 }
 
-Swiper();
 Scroll();
