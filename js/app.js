@@ -697,7 +697,7 @@ function City() {
                     <span>Metro: ${d[i]["metro"]}</span>
                     <span>Acreage: ${d[i]["acreage"]}</span>
                     <span>Population: ${d[i]["population"]}</span>
-                    <ul>
+                    <ul class="mb-2">
                         <li>
                             <a href="">
                                 <i class="bx bxl-facebook"></i>
@@ -719,6 +719,7 @@ function City() {
                             </a>
                         </li>
                     </ul>
+                    <a href="" class="wiki">Wikipedia <i class='bx bx-chevron-right-circle'></i></a>
                     <hr>
                 </div>
                 <div class="col-md-6">
