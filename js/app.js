@@ -668,6 +668,188 @@ function Validate() {
 
 }
 
+function City() {
+    const city = document.querySelector(".sct-city");
+    const ci_wrapper = document.querySelector(".sct-city .ci-wrapper");
+    const ci_below = document.querySelector(".sct-city .ci-below");
+
+    let d = Data(x).sort((a, b) => { return a.top - b.top; });
+    
+    var object_count = 0;
+
+    // console.log(d);
+
+    for (let i = 0; i < d.length; i++) {
+        // console.log(d[i]);
+
+        const div = document.createElement("div");
+
+        div.innerHTML = 
+        `
+            <h6>${d[i]["top"]}. ${d[i]["country"]}</h6>
+            <img alt="" title="${d[i]["thumbnail"]}" src="${d[i]["thumbnail"]}">
+            <span class="note-thumbnail">(*) Note: ${d[i]["note"]}</span>
+            <h4>${d[i]["header"]}</h4>
+
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h4>Population</h4>
+                    <span>Metro: ${d[i]["metro"]}</span>
+                    <span>Acreage: ${d[i]["acreage"]}</span>
+                    <span>Population: ${d[i]["population"]}</span>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bx bxl-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bx bx-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <img alt="" title="" class="" src="${d[i]["location"]}">
+                </div>
+            </div>
+            <div class="${d[i]["name_tag"].toLowerCase()}-content mb-5" id="${d[i]["name_tag"].toLowerCase()}-content">
+            </div>
+        `;
+
+        ci_below.appendChild(div);
+
+        object_count++;
+
+
+        if(d[i]["country"] == "London") {
+
+            const details = d[i]["details"];
+
+            const london = document.getElementById("london-content");
+            const hr = document.createElement("hr");
+            let rename = "line-end-" +  d[i]["top"];
+
+            hr.classList.add("line-end", rename);
+
+            for (let k = 0; k < details.length; k++) {
+                const p = document.createElement("p");
+
+                p.innerHTML = `${details[k]["text"]}`;
+
+                london.appendChild(p);
+            }
+
+            london.appendChild(hr);
+        }
+
+        if(d[i]["country"] == "Tokyo") {
+
+            const details = d[i]["details"];
+
+            const tokyo = document.getElementById("tokyo-content");
+            const hr = document.createElement("hr");
+            let rename = "line-end-" +  d[i]["top"];
+
+            hr.classList.add("line-end", rename);
+
+            for (let k = 0; k < details.length; k++) {
+                const p = document.createElement("p");
+
+                p.innerHTML = `${details[k]["text"]}`;
+
+                tokyo.appendChild(p);
+            }
+
+            tokyo.appendChild(hr);
+        }
+
+        if(d[i]["country"] == "Paris") {
+
+            const details = d[i]["details"];
+
+            const paris = document.getElementById("paris-content");
+            const hr = document.createElement("hr");
+            let rename = "line-end-" +  d[i]["top"];
+
+            hr.classList.add("line-end", rename);
+
+            for (let k = 0; k < details.length; k++) {
+                const p = document.createElement("p");
+
+                p.innerHTML = `${details[k]["text"]}`;
+
+                paris.appendChild(p);
+            }
+
+            paris.appendChild(hr);
+        }
+
+        if(d[i]["country"] == "New York") {
+
+            const details = d[i]["details"];
+
+            const new_york = document.getElementById("new-york-content");
+            const hr = document.createElement("hr");
+            let rename = "line-end-" +  d[i]["top"];
+
+            hr.classList.add("line-end", rename);
+
+            for (let k = 0; k < details.length; k++) {
+                const p = document.createElement("p");
+
+                p.innerHTML = `${details[k]["text"]}`;
+
+                new_york.appendChild(p);
+            }
+
+            new_york.appendChild(hr);
+        }
+
+        if(d[i]["country"] == "Dubai") {
+
+            const details = d[i]["details"];
+
+            const dubai = document.getElementById("dubai-content");
+            const hr = document.createElement("hr");
+            let rename = "line-end-" +  d[i]["top"];
+
+            hr.classList.add("line-end", rename);
+
+            for (let k = 0; k < details.length; k++) {
+                const p = document.createElement("p");
+
+                p.innerHTML = `${details[k]["text"]}`;
+
+                dubai.appendChild(p);
+            }
+
+            dubai.appendChild(hr);
+        }
+        
+    }
+
+    if(city) {
+        ci_wrapper.innerHTML = 
+        `
+            <h4>The World's ${object_count} Best Cities of ${new Date().getFullYear()}</h4>
+            <span>By TLBT News - Webnesday, December 28</span>
+        `;
+    }
+}
+
 function App() {
     switch (site) {
         case "sct-dashboard" : 
@@ -677,6 +859,7 @@ function App() {
         case "sct-other" :
             break;
         case "sct-city" :
+            City();
             break;
         case "sct-feedback" :
             Feedback();

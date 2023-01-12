@@ -666,6 +666,100 @@ section .title-name .header h2 .inline-horizontal::after {
     transform: translateY(-5px);
 }
 
+/* City */
+.sct-city .mxw-config {
+    max-width: 640px !important;
+}
+
+.sct-city .ci-content {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sct-city .ci-content .ci-wrapper {
+    padding-bottom: 20px;
+}
+
+.sct-city .ci-content .ci-wrapper h4 {
+    font-family: var(--ff-graphik) !important;
+    font-size: 2rem;
+}
+
+.sct-city .ci-content .ci-wrapper span {
+    font-weight: 300 !important;
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.sct-city .ci-content .ci-below h6 {
+    font-family: var(--ff-graphik) !important;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-bottom: 10px !important;
+} 
+
+.sct-city .ci-content .ci-below img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.sct-city .ci-content .ci-below .note-thumbnail {
+    font-style: italic;
+    font-size: .75rem;
+}
+
+.sct-city .ci-content .ci-below h4 {
+    font-size: 1rem;
+    padding: .75rem 0 0 !important;
+    font-weight: 700;
+}
+
+.sct-city .ci-content .ci-below .col-md-6 {
+    margin-bottom: 5px;
+}
+
+.sct-city .ci-content .ci-below .col-md-6 h4 {
+    font-family: var(--ff-graphik) !important;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: .25rem !important;
+}
+
+.sct-city .ci-content .ci-below .col-md-6 span {
+    display: block;
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.sct-city .ci-content .ci-below .col-md-6 img {
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover;
+}
+
+.sct-city .ci-content .ci-below .col-md-6 ul {
+    display: flex;
+    margin: 0 auto;
+}
+
+.sct-city .ci-content .ci-below .col-md-6 ul li {
+    margin: 10px 20px 0 0;
+}
+
+.sct-city .ci-content .ci-below p {
+    font-size: .975rem;
+    margin-top: .9rem !important;
+}
+
+.sct-city .ci-content .ci-below .line-end {
+    width: 125px;
+}
+
+.sct-city .ci-content .ci-below .line-end.line-end-5 {
+    display: none !important;
+}
+
 /* Footer */
 footer .container {
     padding-left: 0 !important;
