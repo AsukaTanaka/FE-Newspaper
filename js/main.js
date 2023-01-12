@@ -34,7 +34,7 @@ if(document.querySelector(".sct-other .swiper")) {
             prevEl: ".swiper-button-prev",
         },
         autoplay: {
-            delay: 2500,
+            delay: 5000,
             disableOnInteraction: false,
         },
         breakpoints: {
